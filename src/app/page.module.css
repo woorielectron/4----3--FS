@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+---------------------------------------------------------------*/
+#IMain{
+  width:var(--WIDTH);
+  height: var(--HEIGHT);
+  background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url('../image/root/study.png') no-repeat center center/cover;
+}
+/*--------------------------------------------------------------
+  nav영역
+---------------------------------------------------------------*/
+.CNav{  
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;  
+  margin-top:16px;
+  /* justify-content: space-between; */
+}
+/* 좌측 공부의 숲 이미지 */
+.CImage{
+  position: absolute;
+  left:100px;
+}
+/* 우측의 공부방만들기 버튼 */
+.CTitle{  
+  width: 300px;
+  height:64px;    
+  top:32px;
+}
+.CButtonFont{  
+  position: absolute;
+  
+  right:100px;
+  
+  font-family: 'Bagel Fat One', serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  border-radius: 20px;
+  background-color: #99c08e;  
+}
