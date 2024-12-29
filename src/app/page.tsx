@@ -71,12 +71,10 @@ function FMakeRoom()
         <div className={`${styles.CGrid} ${styles.CMakeRoomBox}`}>
           <div className={`${styles.CGridBox1} ${styles.CGridBox}`}>
             <button className={styles.CGridBoxButton}>
-              <figure>
-                <Image width={WIDTH_GRID_IMAGE} height={HEIGHT_GRID_IMAGE}
-                  className={styles.CGridBoxImage}
-                  src='https://images.unsplash.com/photo-1515092741719-fff72bab4a2a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWR5JTIwZm9yZXN0fGVufDB8fDB8fHww' alt='그림' >
-                </Image>
-              </figure>
+              <Image width={WIDTH_GRID_IMAGE} height={HEIGHT_GRID_IMAGE}
+                className={styles.CGridBoxImage}
+                src='https://images.unsplash.com/photo-1515092741719-fff72bab4a2a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWR5JTIwZm9yZXN0fGVufDB8fDB8fHww' alt='그림' >
+              </Image>
             </button>
           </div>
           <div className={`${styles.CGridBox2} ${styles.CGridBox}`}>
