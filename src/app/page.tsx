@@ -23,7 +23,8 @@ export default function PHome()
         </div>
         <div>
           <input className={`${styles.CButton} ${styles.CFont}`} type='button'
-            value="공부방 만들기" onClick={fnMakeRoom} />
+            value="공부방 만들기" onClick={fnMakeRoom}
+            title="아래의 값들을 입력한후에 다시 '공부방만들기' 클릭하면 공부방이 생성됩니다." />
         </div>
       </div>
       {(enable & 0x01) && <FMakeRoom />}
