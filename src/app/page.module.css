@@ -50,40 +50,6 @@
 /*--------------------------------------------------------------
   공부방 만들기
 ---------------------------------------------------------------*/
-.CMakeRoom{  
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-.CMakeRoomBox{
-  margin:4px;
-}
-.CLabel::before{
-  content:'🔓';
-}
-.CLabel{  
-  font-size: 20px;
-  font-weight: 100;
-  font-style: normal;
-  color:white;
-  margin-right: 32px;
-
-  position: absolute;
-  left:25%;
-}
-.CInputText
-{
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-
-  border-radius: 12px;
-  border:4px ridge gray;
-  width: 350px;
-  height: 36px;
-  padding-left: 8px;
-}
 /* 배경그림 그리드 모드 */
 .CGridBoundary{
   border: 8px ridge gray;
@@ -102,7 +68,7 @@
   gap: 6px;
 }
 .CGridBox{
-    
+  margin:4px;
 }
 /* .CGridBoxButton{
   border-radius: 16px;
@@ -140,3 +106,90 @@
 .CGridBox8{
   grid-area: b4;
 }
+/* 가입 , 아이템 생성 */
+.CMakeRoom{    /* 플렉스 배열(위의 배경화면도 포함) */
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.CMakeRoomBox{
+  position: relative;
+  margin:4px;
+}
+.CLabel::before{
+  content:'🔓'
+}
+.CLabel{  
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+  color:white;
+  position: absolute;
+  left:-70%;  
+}
+.CInputText
+{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  border-radius: 12px;
+  border:4px ridge gray;
+  width: 150%;
+  height: 36px;  
+  padding-left: 8px;  
+}
+.CTextArea
+{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  border-radius: 12px;
+  border:4px ridge gray;
+  
+  padding-left: 8px;  
+}
+/* 아이템 추가 버튼 */
+.CAddButton{  
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+  color:black;
+}
+/* 아이템 추가 */
+.CItemBox{
+  /* width:100%; */
+  position: relative;
+  margin:4px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.CItemLevel{  
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+  color:white;
+}
+.CItemText
+{
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  border-radius: 12px;
+  border:4px ridge gray;
+  
+  padding-left: 8px;  
+
+  /* width: 32px; */
+}
+
+
+
+
+
+
+
+
