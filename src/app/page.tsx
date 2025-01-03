@@ -3,6 +3,7 @@ import studyImage from '../image/root/공부의숲3x.png';
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from 'react';
+import { timeStamp } from 'console';
 /*-------------------------------------------------------------
 메인페이지
 -------------------------------------------------------------*/
@@ -14,7 +15,6 @@ export default function PHome()
   {
     setEnable(e => e ^ 1);
   }
-  //----------------------------------------------------------
   return (
     <div className={styles.CMain}>
       <div className={styles.CNav}>

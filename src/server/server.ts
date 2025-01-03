@@ -2,7 +2,8 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
-import { FCreate, prisma } from './components/study';
+import { FPCreate, prisma, IUser } from './components/study';
+
 /*-------------------------------------------------------------
 변수 미리 선언
 -------------------------------------------------------------*/
@@ -38,17 +39,15 @@ server.listen(port, url, () =>
   console.log(`${url}:${port} 서버시작`);
 });
 
-/*
-FCreate()
-  .then(async () =>
-  {
-    console.log('로그인 종료 완료');
-    await prisma.$disconnect();
-  })
-  .catch(async (e) =>
-  {
-    console.log(e);
-    await prisma.$disconnect();
-    process.exit(1);
-  })
-  */
+let user: IUser;
+
+try
+{
+  FPCreate(user)
+}
+catch (err)
+{
+  console.log('에러발생 : ', err);
+  await prisma.$disconnect()
+}
+
