@@ -4,7 +4,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { JSX, useState } from 'react';
 import { IUser } from '@/server/components/study';
-import { func } from 'superstruct';
 
 /*-------------------------------------------------------------
 메인페이지

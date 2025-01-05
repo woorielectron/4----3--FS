@@ -17,7 +17,6 @@ cors정책에 따라서 .use(cors())는 제일 먼저 선언되어야 한다.
 server.use(cors());
 const router = express.Router();
 server.use(router);
-
 /*-------------------------------------------------------------
 라우터
 -------------------------------------------------------------*/
@@ -48,6 +47,6 @@ try
 catch (err)
 {
   console.log('에러발생 : ', err);
-  await prisma.$disconnect()
+  // await prisma.$disconnect()
 }
 
