@@ -20,6 +20,7 @@
 /*--------------------------------------------------------------
   고정 영역(sticky)
 ---------------------------------------------------------------*/
+/* 공부의숲 문구와 공부방만들기 버튼을 고정*/
 .CNav{    
   display: flex;
   flex-flow: row nowrap;  
@@ -28,7 +29,7 @@
   top:0px;
   z-index: 10;
 }
-/* 좌측 "공부의숲" 글씨 */
+/* 좌측 "공부의숲" 글씨 이미지 */
 .CImage{
   margin-top: 8px;
   margin-left:32px;
@@ -50,16 +51,18 @@
 /*--------------------------------------------------------------
   공부방 만들기
 ---------------------------------------------------------------*/
-/* 배경그림 그리드 모드 */
+/* 배경그림 전체 테두리(fieldset) */
 .CGridBoundary{
   border: 8px ridge gray;
 }
+/* "배경선택" 글씨(legend) */
 .CGridLetter{  
-  font-size: 20px;
+  font-size: var(--FONTSIZE);
   font-weight: 100;
   font-style: normal;
   color:white;
 }
+/* 배경그림 8개 grid 배열 */
 .CGrid{  
   display: grid;    
   grid-template-areas:
@@ -67,21 +70,20 @@
   'b1 b2 b3 b4';
   gap: 6px;
 }
+/* 그리드 전체 테두리 여백 */
 .CGridBox{
-  margin:4px;
+  margin:8px;
 }
-/* .CGridBoxButton{
-  border-radius: 16px;
-  border:1px ridge rgb(128, 128, 128);
-} */
+/* 배경그림 마우스올렸을때 */
 .CGridBoxButton:hover{
   border:8px ridge rgb(255, 128, 64);
 }
+/* 배경그림테두리 */
 .CGridBoxImage{
   border-radius: 16px;
   border:4px ridge rgb(128, 128, 128);
 }
-
+/* 각각의 배경그림 배열 */
 .CGridBox1{
   grid-area: a1;
 }
@@ -106,31 +108,37 @@
 .CGridBox8{
   grid-area: b4;
 }
-/* 가입 , 아이템 생성 */
+/*--------------------------------------------------------------
+  공부방 기본설정
+---------------------------------------------------------------*/
 .CMakeRoom{    /* 플렉스 배열(위의 배경화면도 포함) */
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
+/* 라벨이름 + 로그인 정보 입력창 */
 .CMakeRoomBox{
   position: relative;
   margin:4px;
 }
+/* 라벨이름 전처리 내용 */
 .CLabel::before{
   content:'🔓'
 }
+/* 라벨 이름 */
 .CLabel{  
-  font-size: 20px;
+  font-size: var(--FONTSIZE);
   font-weight: 100;
   font-style: normal;
   color:white;
   position: absolute;
-  left:-70%;  
+  left:-50%;  
 }
+/* 로그인 정보 입력창 */
 .CInputText
 {
-  font-size: 16px;
+  font-size: var(--FONTSIZE);
   font-weight: 400;
   font-style: normal;
 
@@ -140,9 +148,10 @@
   height: 36px;  
   padding-left: 8px;  
 }
+/* 소개글(textarea) */
 .CTextArea
 {
-  font-size: 16px;
+  font-size: var(--FONTSIZE);
   font-weight: 400;
   font-style: normal;
 
@@ -151,12 +160,17 @@
   
   padding-left: 8px;  
 }
+/*--------------------------------------------------------------
+  아이템 추가 처리
+---------------------------------------------------------------*/
 /* 아이템 추가 버튼 */
 .CAddButton{  
-  font-size: 20px;
+  font-size: var(--FONTSIZE);
   font-weight: 100;
   font-style: normal;
   color:black;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 /* 아이템 추가 */
 .CItemBox{
@@ -167,14 +181,14 @@
   flex-flow: row nowrap;
 }
 .CItemLevel{  
-  font-size: 20px;
+  font-size: var(--FONTSIZE);
   font-weight: 100;
   font-style: normal;
   color:white;
 }
 .CItemText
 {
-  font-size: 16px;
+  font-size: var(--FONTSIZE);
   font-weight: 400;
   font-style: normal;
 

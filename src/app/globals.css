@@ -10,6 +10,7 @@
 :root{
   --WIDTH:100vw;
   --HEIGHT:100vh;
+  --FONTSIZE:20px;
 }
 
 * {
