@@ -1,11 +1,10 @@
 'use client'
 import axios from 'axios';
 import studyImage from '@/image/root/공부의숲3x.png';
-import { IUser } from '@/server/components/prisma_create';
+import { IUser } from '@/server/components/types';
 import Image from "next/image";
 import styles from "./page.module.css";
 import { JSX, useState, createContext, useContext, useRef } from 'react';
-import { log } from 'console';
 
 const provContext = createContext(null);
 /*-------------------------------------------------------------
